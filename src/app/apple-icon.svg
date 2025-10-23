@@ -1,0 +1,85 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Градиентный фон -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="180" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0066FF"/>
+      <stop offset="100%" stop-color="#0052CC"/>
+    </linearGradient>
+    <linearGradient id="chipGradient" x1="90" y1="50" x2="90" y2="130" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.2"/>
+    </linearGradient>
+    <radialGradient id="glowGradient" cx="90" cy="90" r="40">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Фон с градиентом -->
+  <rect width="180" height="180" rx="40" fill="url(#bgGradient)"/>
+  
+  <!-- Свечение за микрочипом -->
+  <circle cx="90" cy="90" r="50" fill="url(#glowGradient)"/>
+  
+  <!-- Тень микрочипа -->
+  <rect x="52" y="52" width="76" height="76" rx="7" fill="#000000" opacity="0.2"/>
+  
+  <!-- Микрочип (основа) -->
+  <rect x="50" y="50" width="80" height="80" rx="7" stroke="white" stroke-width="6" fill="url(#chipGradient)"/>
+  
+  <!-- Внутренний квадрат -->
+  <rect x="67" y="67" width="46" height="46" rx="4" fill="white" fill-opacity="0.25" stroke="white" stroke-width="4.5"/>
+  
+  <!-- Контактные ножки (более крупные для 180px) -->
+  <!-- Слева -->
+  <line x1="50" y1="67" x2="32" y2="67" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  <line x1="50" y1="90" x2="32" y2="90" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  <line x1="50" y1="113" x2="32" y2="113" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Справа -->
+  <line x1="130" y1="67" x2="148" y2="67" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  <line x1="130" y1="90" x2="148" y2="90" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  <line x1="130" y1="113" x2="148" y2="113" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Сверху -->
+  <line x1="67" y1="50" x2="67" y2="32" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  <line x1="90" y1="50" x2="90" y2="32" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  <line x1="113" y1="50" x2="113" y2="32" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Снизу -->
+  <line x1="67" y1="130" x2="67" y2="148" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  <line x1="90" y1="130" x2="90" y2="148" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  <line x1="113" y1="130" x2="113" y2="148" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Центральная точка (сигнал) с пульсацией -->
+  <circle cx="90" cy="90" r="7" fill="white" opacity="0.95">
+    <animate attributeName="opacity" values="0.95;0.5;0.95" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="7;8;7" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Волны сигнала (концентрические круги) -->
+  <circle cx="90" cy="90" r="17" stroke="white" stroke-width="3.5" fill="none" opacity="0.6">
+    <animate attributeName="r" values="17;21;17" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="90" cy="90" r="26" stroke="white" stroke-width="3" fill="none" opacity="0.4">
+    <animate attributeName="r" values="26;30;26" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.1;0.4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Внутренние детали микрочипа (декор) -->
+  <line x1="75" y1="90" x2="80" y2="90" stroke="white" stroke-width="2" opacity="0.5"/>
+  <line x1="100" y1="90" x2="105" y2="90" stroke="white" stroke-width="2" opacity="0.5"/>
+  <line x1="90" y1="75" x2="90" y2="80" stroke="white" stroke-width="2" opacity="0.5"/>
+  <line x1="90" y1="100" x2="90" y2="105" stroke="white" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Световые блики для объема -->
+  <path d="M 55 55 Q 60 55, 60 60" stroke="white" stroke-width="4" opacity="0.5" fill="none" stroke-linecap="round"/>
+  <path d="M 120 120 Q 120 125, 125 125" stroke="white" stroke-width="4" opacity="0.3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Маленькие акценты по углам -->
+  <circle cx="70" cy="70" r="2" fill="white" opacity="0.4"/>
+  <circle cx="110" cy="70" r="2" fill="white" opacity="0.4"/>
+  <circle cx="70" cy="110" r="2" fill="white" opacity="0.4"/>
+  <circle cx="110" cy="110" r="2" fill="white" opacity="0.4"/>
+</svg>

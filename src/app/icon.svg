@@ -1,0 +1,65 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Градиентный фон -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0066FF"/>
+      <stop offset="100%" stop-color="#0052CC"/>
+    </linearGradient>
+    <linearGradient id="chipGradient" x1="32" y1="18" x2="32" y2="46" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Фон с градиентом -->
+  <rect width="64" height="64" rx="14" fill="url(#bgGradient)"/>
+  
+  <!-- Тень микрочипа -->
+  <rect x="18.5" y="18.5" width="27" height="27" rx="2.5" fill="#000000" opacity="0.15"/>
+  
+  <!-- Микрочип (основа) -->
+  <rect x="18" y="18" width="28" height="28" rx="2.5" stroke="white" stroke-width="2.5" fill="url(#chipGradient)"/>
+  
+  <!-- Внутренний квадрат -->
+  <rect x="24" y="24" width="16" height="16" rx="1.5" fill="white" fill-opacity="0.25" stroke="white" stroke-width="1.8"/>
+  
+  <!-- Контактные ножки (упрощенные, более элегантные) -->
+  <!-- Слева -->
+  <line x1="18" y1="24" x2="12" y2="24" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="18" y1="32" x2="12" y2="32" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="18" y1="40" x2="12" y2="40" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+  
+  <!-- Справа -->
+  <line x1="46" y1="24" x2="52" y2="24" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="46" y1="32" x2="52" y2="32" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="46" y1="40" x2="52" y2="40" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+  
+  <!-- Сверху -->
+  <line x1="24" y1="18" x2="24" y2="12" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="32" y1="18" x2="32" y2="12" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="40" y1="18" x2="40" y2="12" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+  
+  <!-- Снизу -->
+  <line x1="24" y1="46" x2="24" y2="52" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="32" y1="46" x2="32" y2="52" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="40" y1="46" x2="40" y2="52" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+  
+  <!-- Центральная точка (сигнал) с пульсацией -->
+  <circle cx="32" cy="32" r="2.5" fill="white" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Волны сигнала (концентрические круги) -->
+  <circle cx="32" cy="32" r="6" stroke="white" stroke-width="1.5" fill="none" opacity="0.6">
+    <animate attributeName="r" values="6;8;6" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="32" cy="32" r="9" stroke="white" stroke-width="1.2" fill="none" opacity="0.4">
+    <animate attributeName="r" values="9;11;9" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.1;0.4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Световые блики для глубины -->
+  <path d="M 20 20 Q 22 20, 22 22" stroke="white" stroke-width="1.5" opacity="0.5" fill="none" stroke-linecap="round"/>
+  <path d="M 42 42 Q 42 44, 44 44" stroke="white" stroke-width="1.5" opacity="0.3" fill="none" stroke-linecap="round"/>
+</svg>

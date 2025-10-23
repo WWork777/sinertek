@@ -1,0 +1,311 @@
+<!-- Предварительный просмотр логотипа SINERTEK Electronics -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SINERTEK Logo Preview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            padding: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+        }
+        
+        .preview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .preview-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 200px;
+        }
+        
+        .preview-card.dark {
+            background: #1a1a1a;
+        }
+        
+        .preview-card.primary {
+            background: #0066FF;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        
+        .logo-container:hover svg {
+            transform: scale(1.1);
+        }
+        
+        .logo-icon {
+            transition: transform 0.3s;
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1;
+        }
+        
+        .logo-main {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        .logo-sub {
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 2px;
+        }
+        
+        .dark .logo-main,
+        .dark .logo-sub {
+            color: white;
+        }
+        
+        .primary .logo-main,
+        .primary .logo-sub {
+            color: white;
+        }
+        
+        .light .logo-main {
+            color: #1a1a1a;
+        }
+        
+        .light .logo-sub {
+            color: #666;
+        }
+        
+        .favicon-preview {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .favicon-item {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        
+        .favicon-item p {
+            margin-top: 15px;
+            color: #666;
+            font-weight: 600;
+        }
+        
+        .info-section {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            margin-top: 40px;
+        }
+        
+        .info-section h2 {
+            color: #0066FF;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        
+        .info-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .info-section li {
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+            color: #333;
+        }
+        
+        .info-section li:last-child {
+            border-bottom: none;
+        }
+        
+        .color-chip {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 6px;
+            margin-right: 10px;
+            vertical-align: middle;
+            border: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 SINERTEK Electronics - Логотип</h1>
+        
+        <div class="preview-grid">
+            <!-- Светлая тема -->
+            <div class="preview-card light">
+                <div class="logo-container">
+                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-icon">
+                        <rect x="10" y="10" width="22" height="22" rx="2" stroke="#1a1a1a" stroke-width="2" fill="none"/>
+                        <rect x="14" y="14" width="14" height="14" rx="1" fill="#0066FF" fill-opacity="0.2" stroke="#0066FF" stroke-width="1.5"/>
+                        <line x1="10" y1="15" x2="6" y2="15" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="10" y1="21" x2="6" y2="21" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="10" y1="27" x2="6" y2="27" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="32" y1="15" x2="36" y2="15" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="32" y1="21" x2="36" y2="21" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="32" y1="27" x2="36" y2="27" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M 19 21 Q 19 18, 21 18 Q 23 18, 23 21 Q 23 24, 21 24 Q 19 24, 19 21" fill="#0066FF" opacity="0.8">
+                            <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+                        </path>
+                    </svg>
+                    <div class="logo-text">
+                        <span class="logo-main">SINERTEK</span>
+                        <span class="logo-sub">Electronics</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Темная тема -->
+            <div class="preview-card dark">
+                <div class="logo-container">
+                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-icon">
+                        <rect x="10" y="10" width="22" height="22" rx="2" stroke="white" stroke-width="2" fill="none"/>
+                        <rect x="14" y="14" width="14" height="14" rx="1" fill="white" fill-opacity="0.2" stroke="white" stroke-width="1.5"/>
+                        <line x1="10" y1="15" x2="6" y2="15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="10" y1="21" x2="6" y2="21" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="10" y1="27" x2="6" y2="27" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="32" y1="15" x2="36" y2="15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="32" y1="21" x2="36" y2="21" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="32" y1="27" x2="36" y2="27" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M 19 21 Q 19 18, 21 18 Q 23 18, 23 21 Q 23 24, 21 24 Q 19 24, 19 21" fill="white" opacity="0.8">
+                            <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+                        </path>
+                    </svg>
+                    <div class="logo-text">
+                        <span class="logo-main">SINERTEK</span>
+                        <span class="logo-sub">Electronics</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Primary background -->
+            <div class="preview-card primary">
+                <div class="logo-container">
+                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-icon">
+                        <rect x="10" y="10" width="22" height="22" rx="2" stroke="white" stroke-width="2" fill="none"/>
+                        <rect x="14" y="14" width="14" height="14" rx="1" fill="white" fill-opacity="0.2" stroke="white" stroke-width="1.5"/>
+                        <line x1="10" y1="15" x2="6" y2="15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="10" y1="21" x2="6" y2="21" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="10" y1="27" x2="6" y2="27" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="32" y1="15" x2="36" y2="15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="32" y1="21" x2="36" y2="21" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="32" y1="27" x2="36" y2="27" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M 19 21 Q 19 18, 21 18 Q 23 18, 23 21 Q 23 24, 21 24 Q 19 24, 19 21" fill="white" opacity="0.8">
+                            <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+                        </path>
+                    </svg>
+                    <div class="logo-text">
+                        <span class="logo-main">SINERTEK</span>
+                        <span class="logo-sub">Electronics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Favicon preview -->
+        <div class="favicon-preview">
+            <div class="favicon-item">
+                <img src="data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='64' height='64' rx='12' fill='%230066FF'/%3E%3Crect x='16' y='16' width='32' height='32' rx='3' stroke='white' stroke-width='2.5' fill='none'/%3E%3Crect x='22' y='22' width='20' height='20' rx='2' fill='white' fill-opacity='0.3' stroke='white' stroke-width='2'/%3E%3Cline x1='16' y1='24' x2='10' y2='24' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='16' y1='32' x2='10' y2='32' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='16' y1='40' x2='10' y2='40' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='48' y1='24' x2='54' y2='24' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='48' y1='32' x2='54' y2='32' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='48' y1='40' x2='54' y2='40' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='24' y1='16' x2='24' y2='10' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='32' y1='16' x2='32' y2='10' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='40' y1='16' x2='40' y2='10' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='24' y1='48' x2='24' y2='54' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='32' y1='48' x2='32' y2='54' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='40' y1='48' x2='40' y2='54' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='32' r='3' fill='white'/%3E%3Ccircle cx='32' cy='32' r='6' stroke='white' stroke-width='1.5' fill='none' opacity='0.6'/%3E%3Ccircle cx='32' cy='32' r='9' stroke='white' stroke-width='1.5' fill='none' opacity='0.4'/%3E%3C/svg%3E" width="64" height="64" alt="Favicon">
+                <p>Favicon 64×64</p>
+            </div>
+            
+            <div class="favicon-item">
+                <img src="data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='64' height='64' rx='12' fill='%230066FF'/%3E%3Crect x='16' y='16' width='32' height='32' rx='3' stroke='white' stroke-width='2.5' fill='none'/%3E%3Crect x='22' y='22' width='20' height='20' rx='2' fill='white' fill-opacity='0.3' stroke='white' stroke-width='2'/%3E%3Cline x1='16' y1='24' x2='10' y2='24' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='16' y1='32' x2='10' y2='32' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='16' y1='40' x2='10' y2='40' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='48' y1='24' x2='54' y2='24' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='48' y1='32' x2='54' y2='32' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='48' y1='40' x2='54' y2='40' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='24' y1='16' x2='24' y2='10' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='32' y1='16' x2='32' y2='10' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='40' y1='16' x2='40' y2='10' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='24' y1='48' x2='24' y2='54' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='32' y1='48' x2='32' y2='54' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='40' y1='48' x2='40' y2='54' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='32' r='3' fill='white'/%3E%3Ccircle cx='32' cy='32' r='6' stroke='white' stroke-width='1.5' fill='none' opacity='0.6'/%3E%3Ccircle cx='32' cy='32' r='9' stroke='white' stroke-width='1.5' fill='none' opacity='0.4'/%3E%3C/svg%3E" width="128" height="128" alt="Apple Icon">
+                <p>Apple Touch 180×180</p>
+            </div>
+        </div>
+        
+        <!-- Info section -->
+        <div class="info-section">
+            <h2>🎨 Цветовая палитра</h2>
+            <ul>
+                <li>
+                    <span class="color-chip" style="background: #0066FF;"></span>
+                    <strong>Основной (Primary)</strong> - #0066FF - Технологии, надежность
+                </li>
+                <li>
+                    <span class="color-chip" style="background: #07be8a;"></span>
+                    <strong>Акцентный (Accent)</strong> - #07be8a - Интерактивные элементы
+                </li>
+                <li>
+                    <span class="color-chip" style="background: #1a1a1a;"></span>
+                    <strong>Темный (Dark)</strong> - #1a1a1a - Текст, темная тема
+                </li>
+                <li>
+                    <span class="color-chip" style="background: white;"></span>
+                    <strong>Светлый (Light)</strong> - #FFFFFF - Фон, текст на темном
+                </li>
+            </ul>
+        </div>
+        
+        <div class="info-section">
+            <h2>✨ Особенности</h2>
+            <ul>
+                <li>✅ Адаптивный дизайн - автоматическая смена цветов</li>
+                <li>✅ Анимация - пульсирующий сигнал (2s цикл)</li>
+                <li>✅ Hover эффект - увеличение иконки на 10%</li>
+                <li>✅ Responsive - корректное отображение на всех устройствах</li>
+                <li>✅ PWA ready - фавикон, manifest, Apple Touch Icon</li>
+                <li>✅ Performance - inline SVG, 0 HTTP запросов</li>
+            </ul>
+        </div>
+        
+        <div class="info-section">
+            <h2>📁 Файлы</h2>
+            <ul>
+                <li><strong>Header логотип:</strong> src/components/Layout/Header/index.tsx</li>
+                <li><strong>Logo компонент:</strong> src/components/Layout/Header/BrandLogo/Logo.tsx</li>
+                <li><strong>Favicon:</strong> src/app/icon.svg (64×64)</li>
+                <li><strong>Apple Icon:</strong> src/app/apple-icon.svg (180×180)</li>
+                <li><strong>Manifest:</strong> public/manifest.json</li>
+                <li><strong>Metadata:</strong> src/app/layout.tsx</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
